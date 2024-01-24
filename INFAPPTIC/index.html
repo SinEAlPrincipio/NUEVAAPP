@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Encuesta</title>
+ <link rel="stylesheet" href="CSS\main.css">
+</head>
+<body>
+ <div class="container">
+  <h1>Formulario de consentimiento e información</h1>
+    <form  action="index.html" method="post" id="formulario">
+    <section>
+        <p><label for="confirmacion">¿Desea usted participar en este estudio y autorizar a la Universidad de Córdoba y a la Universidad del Norte a recolectar, almacenar, conservar, publicar y transferir datos personales de los cuales usted es el titular o es el representante legal del titular? </label></p>
+            <label><input type="radio" name="consent" value="yes" required> Sí</label>
+            <label><input type="radio" name="consent" value="no" required> No</label>
+    </section>
+    <section>
+      <fieldset>
+            <div class="parent-info">
+                <p><label for="nombre">2. Nombre completo de la persona encuestada:</label></p>
+                <input type="text" name="name" required>
+
+                <p><label for="edad">3. Edad</label>:</p>
+                <input type="number" name="age" required>
+
+                <p><label for="cedula">3.1 Cédula</label>:</p>
+                <input type="text" id="cedula" name="cedula" required>
+                
+                <p><label for="tipoid">3.2. Tipo de Identificación:</label></p>
+                <label><input type="radio" name="id-type" value="cedula" required> Cédula</label>
+                <label><input type="radio" name="id-type" value="ti" required> TI</label>
+                <label><input type="radio" name="id-type"  required> Otro</label>
+              
+                <p><label for="numerocel">4. Número de Célular:</label></p>
+                <input type="tel" name="phone" required>
+                
+                <p><label for="genero">5. Género:</label></p>
+                <label><input type="radio" name="gender" value="male" required> Masculino</label>
+                <label><input type="radio" name="gender" value="female" required> Femenino</label>
+                <label><input type="radio" name="gender" value="other" required> Otras formas</label>
+      </fieldset>
+    </section>
+    <label for=""></label>
+     <section>
+      <fieldset>
+                <p>Por favor indique los datos de uno de sus padres, sobre todo si usted es menor de edad:</p>
+                <p><label for="nombreMadre">6. Nombre completo de su padre/madre:</label></p>
+                <input type="text" name="parent-name" required>
+
+                <p><label for="numerocel">7. Número Célular:</label></p>
+                <input type="tel" name="parent-phone" required>
+
+                <p><label for="grupo-etnico">8. ¿Es usted de un grupo étnico?</label></p>
+                <label><input type="radio" name="etnia" value="yes" required> Sí</label>
+                <label><input type="radio" name="etnia" value="no" required> No</label>
+
+                <p><label for="grupo-etnico2">9. ¿Cuál?</label></p>
+                <label><input type="radio" name="ethnic-group" value="afrocolombiano" required> Afrocolombiano</label>
+                <label><input type="radio" name="ethnic-group" value="indigena" required> Indígena</label>
+                <label><input type="radio" name="ethnic-group" value="rrom" required> Rrom o Gitano</label>
+
+                <p><label for="Nivel">10. Nivel educativo:</label></p>
+                <select id="Nivel educativo" name="Nivel education">
+                  <option value="">-- Seleccione --</option>
+                  <option value="none">1. Sin estudios</option>
+                  <option value="primary">2. Primaria</option>
+                  <option value="secondary">3. Bachillerato</option>
+                  <option value="technical">5. Técnico/Tenólogo</option>
+                  <option value="undergraduate">6. Pregrado</option>
+                  <option value="postgraduate">6. Postgrado</option>
+                </select>
+                             
+                <p><label for="ocupacion">11. ¿A qué se dedica? :</label></p>
+                  <select id="ocupacion" name="ocupacion">
+                      <option value="">-- Seleccione --</option>
+                      <option value="estudia">1. Estudia</option>
+                      <option value="trabajo_formal">2. Trabajo formal</option>
+                      <option value="trabajo_informal">3. Trabajo informal</option>
+                      <option value="amo_casa">3. Amo de Casa</option>
+                      <option value="pensionado">5. Pensionado</option>
+                      <option value="desempleado">6. Desempleado</option>
+                      <option value="inactivoxenf">6. Inactivo por enfermedad</option>
+                  </select>
+      
+                <p><label for="lugar-trabajo1">12. ¿Donde y trabaja? :</label></p>
+                  <input type="text" name="parent-name" required> 
+
+                <p> 13. <label for="estudia">¿Está estudiando? </label></p>
+                  <label><input type="radio" name="ethnic" value="yes" required> Sí</label>
+                  <label><input type="radio" name="ethnic" value="no" required> No</label>
+                
+                <p>    <label for="ingreso-semana">14. Ingresos a la Semana </label>:</p>
+                  <input type="number" name="ingreso" required>
+      
+          </fieldset>
+      </section>
+      <label for=""></label>
+      <section>
+        <fieldset>
+          <p><label for="direccion">15. Dirección de su vivienda:</label>
+            <input type="text" id="direccion" name="direccion"></p>
+          
+          <p><label for="barrio">16. Barrio:</label>
+            <input type="text" id="barrio" name="barrio"></p>
+          
+          <p><label for="vive">17. ¿Hace cuántos años vive en este municipio?</label>
+            <input type="number" id="vive" name="vive"></p>
+           
+          
+          <label for="desplazado">18. ¿Es desplazado o migrante?</label>
+            <label><input type="radio" name="desplazado" value="yes" required> Sí</label>
+            <label><input type="radio" name="desplazado" value="no" required> No</label>
+
+              <input type="number" name="other" required>
+          
+          <br>
+              
+          <label for="nacionalidad">19. ¿Tiene otra nacionalidad?</label>
+          <select id="nacionalidad" name="nacionalidad">
+              <option value="">-- Seleccione --</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option><br>
+              <input type="text" id="direccion" name="direccion" required><br>
+          </select>
+        </fieldset>
+      </section>
+      <label for=""></label>
+      <section>
+        <fieldset>
+      <h1>Encuesta para Familias con Niños(as) Menores de 6 Años</h1>
+        <form>
+            <p>
+                <label for="pregunta21">21. ¿Usted cuida a un niño(a) menor de 6 años?</label>
+                <label for="si">Si</label>
+                <input type="radio" id="si" name="pregunta22" value="si" required>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="pregunta22" value="no" required>
+            </p>
+            <p>
+                <label for="nombre">22. Nombre del niño(a) que participaría en este proyecto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+                <label for="pregunta24">23. Género:</label>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="pregunta24" value="masculino" required>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="pregunta24" value="femenino" required>
+            </p>
+            <p>
+                <label for="fecha">24. Fecha de nacimiento del niño(a):</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </p>
+            <p>
+                <label for="guarderia">25. Guardería / CDI:</label>
+                <input type="text" id="guarderia" name="guarderia">
+            </p>
+            <p>
+                <label for="programa">26. Programa:</label>
+                <input type="radio" id="fami" name="programa" value="fami" required>
+                <label for="fami">1FAMI</label>
+                <input type="radio" id="otro" name="programa" value="otro" required>
+                <label for="otro">Otro</label>
+                <input type="radio" id="solo" name="programa" value="solo" required>
+                <label for="solo">Ninguno, solo en casa</label>
+                
+            </p>
+            <p>
+                <label for="condicion">27. ¿El niño(a) presenta alguna condición especial física o mental?</label>
+                <label for="si">Si</label>
+                <input type="radio" id="si" name="pregunta28" value="si" required>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="pregunta28" value="no" required>
+            </p>
+            
+             <label for="parentesco">28. ¿Cuál es su parentesco con el niño(a)?</label>
+              <select id="parentesco" name="parentesco">
+                  <option value="">-- Seleccione --</option>
+                  <option value="madre">1. Madre</option>
+                  <option value="madrastra">2. Madrastra</option>
+                  <option value="padre">3. Padre</option>
+                  <option value="padrastro">4. Padrastro</option>
+                  <option value="tio">5. Tío(a)</option>
+                  <option value="abuelo">6. Abuelo(a)</option>
+                  <option value="hermano">7. Hermano(a)</option>
+                  <option value="otrop">8. Otro(a)</option>
+              </select>
+           </p>
+           <label for="primerhijo">29. ¿A qué edad tuvo la Madre su primer hijo?</label>
+                  <input type="number" name="primerhijo" required>
+          </p>
+        </p>
+        <label for="menor18">30. ¿Cuántos hijos menores de 18 años tiene la madre?</label>
+               <input type="number" name="menor18" required>
+       </p>
+        </fieldset>
+       </section>    
+    <section>
+      <fieldset>  
+        
+        <label for="nombrePadre">31. Nombre completo del padre del niño:</label>
+          <input type="text" name="nombrePadre" required>
+        
+        <label for="celular">31. Número de Celular:</label>
+          <input type="tel" name="celular" required>
+
+        <label for="edad">32. Edad:</label>
+        <input type="number" id="edad" name="edad" min="1" max="120">
+      
+        <label for="cedula">33. Cédula:</label>
+        <input type="text" id="cedula" name="cedula">
+        
+        <label for="nivel-educativo">34. Nivel educativo:</label>
+        <select id="nivel-educativo" name="nivel-educativo">
+          <option value="">Seleccione una opción</option>
+          <option value="sin-estudios">Osin estudios</option>
+          <option value="primaria">1. Primaria</option>
+          <option value="bachillerato">2. Bachillerato</option>
+          <option value="tecnico">3. Técnico</option>
+        </select>
+      
+        <label for="ocupacionp">35. A qué se dedica:</label>
+        <select id="ocupacionp" name="ocupacionp">
+          <option value="">Seleccione una opción</option>
+          <option value="estudia">1. Estudia</option>
+          <option value="trabajo-formal">2. Trabajo formal</option>
+          <option value="trabajo-informal">3. Trabajo informal</option>
+          <option value="amo-casa">5. Amo(a) de casa</option>
+          <option value="pensionado">6. Pensionado</option>
+          <option value="desempleado">7. Desempleado</option>
+          <option value="inactivo-enfermedad">8. Inactivo por enfermedad</option>
+          
+        </select><br>
+      
+        <label for="lugar-trabajo">36. Dónde trabaja:</label>
+        <input type="text" id="lugar-trabajo" name="lugar-trabajo">
+      
+        <p><label for="estudia">37. Estudia:</label>
+           <label for="si">Si</label>
+                <input type="radio" id="si" name="estudia" value="si" required>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="estudia" value="no" required>
+        </p>
+              
+        <label for="ingresos">38. Ingresos en la semana:</label>
+        <input type="number" id="ingresos" name="ingresos" min="0"><br>
+      
+        <label for="estado-civil">39. Con el padredel niño está en:</label>
+        <select id="estado-civil" name="estado-civil">
+          <option value="">Seleccione una opción</option>
+          <option value="union-libre">1. Unión libre</option>
+          <option value="casado">2. Casada(o)</option>
+          <option value="separado">3. Separada(o)</option>
+          <option value="viudo">4. Viuda(o)</option>
+        </select>
+      </fieldset>
+    </section> 
+    <section>
+      <fieldset> 
+      </p>
+      <label for="familia">40. ¿Cuántas personas en total viven en la casa del niño(a), incluyendo todos los niños y adultos?</label>
+             <input type="number" name="familia" required>
+     </p>
+     <p>
+      <label for="gastos">41.Sobre todo, ¿quien responde actualmente por los gastos de la alimentación del niño(a)?: </label>
+        <select id="gastos" name="gastos">
+          <option value="">-- Seleccione --</option>
+          <option value="madre">1. Madre</option>
+          <option value="madrastra">2. Madrastra</option>
+          <option value="padre">3. Padre</option>
+          <option value="padrastro">4. Padrastro</option>
+          <option value="tio">5. Tío(a)</option>
+          <option value="abuelo">6. Abuelo(a)</option>
+          <option value="hermano">7. Hermano(a)</option>
+          <option value="otrog">8. Otro(a)</option>
+        </select> 
+     </p>
+     <p>
+      <label for="alimento">42. Sobre todo, ¿quien se encarga de prepararle y darle la comida al niño(a) en su casa?: </label>
+        <select id="alimento" name="alimento">
+          <option value="">-- Seleccione --</option>
+          <option value="madre">1. Madre</option>
+          <option value="madrastra">2. Madrastra</option>
+          <option value="padre">3. Padre</option>
+          <option value="padrastro">4. Padrastro</option>
+          <option value="tio">5. Tío(a)</option>
+          <option value="abuelo">6. Abuelo(a)</option>
+          <option value="hermano">7. Hermano(a)</option>
+          <option value="otroa">8. Otro(a)</option>
+        </select> 
+     </p>
+    </p>
+    <label for="comida">43. ¿Generalmente usted cuántas comidas al día le prepara al niño ?</label>
+           <input type="number" name="comida" required>
+   </p>
+  </p>
+  <label for="comida-recibe">43. ¿Generalmente usted cuántas comidas al día le prepara al niño ?</label>
+         <input type="number" name="comida-recibe" required>
+ </p>
+      </fieldset>
+    </section> 
+     </div>
+    </form>
+    </div>
+    <button id="agregarCampo">Agregar campo</button>
+    <button id="guardarEncuesta">Guardar encuesta</button>
+    <button type="submit">Enviar</button>
+
+    .        
+ </div>2
+ <script src="JS/main.js"></script>
+</body>
+</html>
