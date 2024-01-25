@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Encuesta</title>
+ <link rel="stylesheet" href="CSS\main.css">
+ <script src=     
+    ></script>
+</head>
+<body>
+  <header class="header">
+    
+    <nav class="nav">
+      <div>
+        <a><img src="images\Logo\LOGO2.png"  class="logo"  height="55"></a>
+       </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <a><img src="images\ico\menu2.png"  alt="menu" class="fas fa-bars" width="25" height="30"></a>
+      <!--<a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/men%C3%BA">Menú</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    </button>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Inicio</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Arichivo</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Papelera</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Enviado</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Cerrar Sesión</a>
+      </li>
+    </ul>
+    </nav>  
+  </header> 
+ <div class="container">
+  <h1>Formulario de consentimiento e información</h1>
+    <form  action="index.html" method="post" id="formulario">
+    <section>
+        
+        <fieldset>
+            <label for="direccion">15. Dirección de su vivienda:</label>
+              <input type="text" id="direccion" name="direccion">
+            
+            <p<label for="barrio">16. Barrio:</label>
+              <input type="text" id="barrio" name="barrio">
+            
+            <p><label for="vive">17. ¿Hace cuántos años vive en este municipio?</label>
+              <input type="number" id="vive" name="vive"></p>
+             
+            
+            <label for="desplazado">18. ¿Es desplazado o migrante?</label>
+            <select id="desplazado" name="desplazado">
+              <option value="">-- Seleccione --</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+              
+          </select></p>
+              <label for="desplazado">18.1 hace cuantos años se desplazó o migró?</label>
+                <input type="number" name="other" required>
+            
+                          
+            <p><label for="nacionalidad">19. ¿Tiene otra nacionalidad?</label>
+              <select id="nacionalidad" name="nacionalidad">
+                  <option value="">-- Seleccione --</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                  
+              </select></p>
+            <p><label for="que-nacionalidad">20. ¿Tiene otra nacionalidad?</label>
+            <select id="que-nacionalidad" name="nacionalidad">
+              <input type="text" id="cual" name="cual" required><br></p>
+          </fieldset>
+    </section> 
+  </form>
+  </div>
+
+  <td><div class="buttonsig">
+    <button class="save" id="guardarEncuesta">Guardar encuesta</button>
+  </div>
+</td>
+  <td><div class="buttonsig">
+    <button Class="save" type="submit">Siguiente</button>
+  </div>
+
+<script src="JS/main.js"></script>
+</body>
+</html>

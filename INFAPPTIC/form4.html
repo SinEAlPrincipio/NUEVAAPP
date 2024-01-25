@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+  <html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Encuesta</title>
+ <link rel="stylesheet" href="CSS\main.css">
+ <script src=     
+    ></script>
+</head>
+<body>
+  <header class="header">
+    
+    <nav class="nav">
+      <div>
+        <a><img src="images\Logo\LOGO2.png"  class="logo"  height="55"></a>
+       </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <a><img src="images\ico\menu2.png"  alt="menu" class="fas fa-bars" width="25" height="30"></a>
+      <!--<a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/men%C3%BA">Menú</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    </button>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Inicio</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Arichivo</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Papelera</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Enviado</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Cerrar Sesión</a>
+      </li>
+    </ul>
+    </nav>  
+  </header> 
+ <div class="container">
+  <h1>Formulario de consentimiento e información</h1>
+    <form  action="index.html" method="post" id="formulario">
+    <section>
+        <fieldset>
+        <h1>Encuesta para Familias con Niños(as) Menores de 6 Años</h1>
+          <form>
+              <p>
+                  <label for="pregunta21">21. ¿Usted cuida a un niño(a) menor de 6 años?</label>
+                  <label for="si">Si</label>
+                  <input type="radio" id="si" name="pregunta22" value="si" required>
+                  <label for="no">No</label>
+                  <input type="radio" id="no" name="pregunta22" value="no" required>
+              </p>
+              <p>
+                  <label for="nombre">22. Nombre del niño(a) que participaría en este proyecto:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+              </p>
+              <p>
+                  <label for="pregunta24">23. Género:</label>
+                  <label for="masculino">Masculino</label>
+                  <input type="radio" id="masculino" name="pregunta24" value="masculino" required>
+                  <label for="femenino">Femenino</label>
+                  <input type="radio" id="femenino" name="pregunta24" value="femenino" required>
+              </p>
+              <p>
+                  <label for="fecha">24. Fecha de nacimiento del niño(a):</label>
+                  <input type="date" id="fecha" name="fecha" required>
+              </p>
+              <p>
+                  <label for="guarderia">25. Guardería / CDI:</label>
+                  <input type="text" id="guarderia" name="guarderia">
+              </p>
+              <p>
+                  <label for="programa">26. Programa:</label>
+                  <input type="radio" id="fami" name="programa" value="fami" required>
+                  <label for="fami">1FAMI</label>
+                  <input type="radio" id="otro" name="programa" value="otro" required>
+                  <label for="otro">Otro</label>
+                  <input type="radio" id="solo" name="programa" value="solo" required>
+                  <label for="solo">Ninguno, solo en casa</label>
+                  
+              </p>
+              <p>
+                  <label for="condicion">27. ¿El niño(a) presenta alguna condición especial física o mental?</label>
+                  <label for="si">Si</label>
+                  <input type="radio" id="si" name="pregunta28" value="si" required>
+                  <label for="no">No</label>
+                  <input type="radio" id="no" name="pregunta28" value="no" required>
+              </p>
+              
+               <label for="parentesco">28. ¿Cuál es su parentesco con el niño(a)?</label>
+                <select id="parentesco" name="parentesco">
+                    <option value="">-- Seleccione --</option>
+                    <option value="madre">1. Madre</option>
+                    <option value="madrastra">2. Madrastra</option>
+                    <option value="padre">3. Padre</option>
+                    <option value="padrastro">4. Padrastro</option>
+                    <option value="tio">5. Tío(a)</option>
+                    <option value="abuelo">6. Abuelo(a)</option>
+                    <option value="hermano">7. Hermano(a)</option>
+                    <option value="otrop">8. Otro(a)</option>
+                </select>
+             </p>
+             <label for="primerhijo">29. ¿A qué edad tuvo la Madre su primer hijo?</label>
+                    <input type="number" name="primerhijo" required>
+            </p>
+          </p>
+          <label for="menor18">30. ¿Cuántos hijos menores de 18 años tiene la madre?</label>
+                 <input type="number" name="menor18" required>
+         </p>
+          </fieldset>
+        </section> 
+    
+      </form>
+      </div>
+
+      <td><div class="buttonsig">
+        <button class="save" id="guardarEncuesta">Guardar encuesta</button>
+      </div>
+    </td>
+      <td><div class="buttonsig">
+        <button Class="save" type="submit">Siguiente</button>
+      </div>
+   </div>
+  </div>
+<script src="JS/main.js"></script>
+</body>
+</html>  

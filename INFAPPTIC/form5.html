@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+  <html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Encuesta</title>
+ <link rel="stylesheet" href="CSS\main.css">
+ <script src=     
+    ></script>
+</head>
+<body>
+  <header class="header">
+    
+    <nav class="nav">
+      <div>
+        <a><img src="images\Logo\LOGO2.png"  class="logo"  height="55"></a>
+       </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <a><img src="images\ico\menu2.png"  alt="menu" class="fas fa-bars" width="25" height="30"></a>
+      <!--<a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/men%C3%BA">Menú</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    </button>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Inicio</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Arichivo</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Papelera</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Enviado</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Cerrar Sesión</a>
+      </li>
+    </ul>
+    </nav>  
+  </header> 
+ <div class="container">
+  <h1>Formulario de consentimiento e información</h1>
+    <form  action="index.html" method="post" id="formulario">
+ <section>
+      <fieldset>  
+        
+        <label for="nombrePadre">31. Nombre completo del padre del niño:</label>
+          <input type="text" name="nombrePadre" required>
+        
+        <label for="celular">32. Número de Celular:</label>
+          <input type="tel" name="celular" required>
+
+        <label for="edad">33. Edad:</label>
+        <input type="number" id="edad" name="edad" min="1" max="120">
+      
+        <label for="cedula">34. Cédula:</label>
+        <input type="text" id="cedula" name="cedula">
+        
+        <label for="nivel-educativo">35. Nivel educativo:</label>
+        <select id="nivel-educativo" name="nivel-educativo">
+          <option value="">Seleccione una opción</option>
+          <option value="sin-estudios">Osin estudios</option>
+          <option value="primaria">1. Primaria</option>
+          <option value="bachillerato">2. Bachillerato</option>
+          <option value="tecnico">3. Técnico</option>
+        </select>
+      
+        <label for="ocupacionp">36. A qué se dedica:</label>
+        <select id="ocupacionp" name="ocupacionp">
+          <option value="">Seleccione una opción</option>
+          <option value="estudia">1. Estudia</option>
+          <option value="trabajo-formal">2. Trabajo formal</option>
+          <option value="trabajo-informal">3. Trabajo informal</option>
+          <option value="amo-casa">5. Amo(a) de casa</option>
+          <option value="pensionado">6. Pensionado</option>
+          <option value="desempleado">7. Desempleado</option>
+          <option value="inactivo-enfermedad">8. Inactivo por enfermedad</option>
+          
+        </select><br>
+      
+        <label for="lugar-trabajo">37. Dónde trabaja:</label>
+        <input type="text" id="lugar-trabajo" name="lugar-trabajo">
+      
+        <p><label for="estudia">38. Estudia:</label>
+           <label for="si">Si</label>
+                <input type="radio" id="si" name="estudia" value="si" required>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="estudia" value="no" required>
+        </p>
+              
+        <label for="ingresos">39. Ingresos en la semana:</label>
+        <input type="number" id="ingresos" name="ingresos" min="0"><br>
+      
+        <label for="estado-civil">40. Con el padredel niño está en:</label>
+        <select id="estado-civil" name="estado-civil">
+          <option value="">Seleccione una opción</option>
+          <option value="union-libre">1. Unión libre</option>
+          <option value="casado">2. Casada(o)</option>
+          <option value="separado">3. Separada(o)</option>
+          <option value="viudo">4. Viuda(o)</option>
+        </select>
+      </fieldset>
+    </section> 
+  </form>
+  </div>
+
+  <td><div class="buttonsig">
+    <button class="save" id="guardarEncuesta">Guardar encuesta</button>
+  </div>
+</td>
+  <td><div class="buttonsig">
+    <button Class="save" type="submit">Siguiente</button>
+  </div>
+</div>
+</div>
+<script src="JS/main.js"></script>
+</body>
+</html>

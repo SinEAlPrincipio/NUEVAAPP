@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+  <html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Encuesta</title>
+ <link rel="stylesheet" href="CSS\main.css">
+ <script src=     
+    ></script>
+</head>
+<body>
+  <header class="header">
+    
+    <nav class="nav">
+      <div>
+        <a><img src="images\Logo\LOGO2.png"  class="logo"  height="55"></a>
+       </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <a><img src="images\ico\menu2.png"  alt="menu" class="fas fa-bars" width="25" height="30"></a>
+      <!--<a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/men%C3%BA">Menú</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    </button>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Inicio</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Arichivo</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Papelera</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Enviado</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Cerrar Sesión</a>
+      </li>
+    </ul>
+    </nav>  
+  </header> 
+    <div class="container">
+        <h1>Formulario de consentimiento e información</h1>
+<form  action="index.html" method="post" id="formulario">
+            <section>
+                <fieldset>
+                    <p>Por favor indique los datos de uno de sus padres, sobre todo si usted es menor de edad:</p>
+                    <p><label for="nombreMadre">6. Nombre completo de su padre/madre:</label></p>
+                    <input type="text" name="parent-name" required>
+    
+                    <p><label for="numerocel">7. Número Célular:</label></p>
+                    <input type="tel" name="parent-phone" required>
+    
+                    <p><label for="grupo-etnico">8. ¿Es usted de un grupo étnico?</label></p>
+                    <label><input type="radio" name="etnia" value="yes" required> Sí</label>
+                    <label><input type="radio" name="etnia" value="no" required> No</label>
+    
+                    <p><label for="grupo-etnico2">9. ¿Cuál?</label></p>
+                    <label><input type="radio" name="ethnic-group" value="afrocolombiano" required> Afrocolombiano</label>
+                    <label><input type="radio" name="ethnic-group" value="indigena" required> Indígena</label>
+                    <label><input type="radio" name="ethnic-group" value="rrom" required> Rrom o Gitano</label>
+    
+                    <p><label for="Nivel">10. Nivel educativo:</label></p>
+                    <select id="Nivel educativo" name="Nivel education">
+                      <option value="">-- Seleccione --</option>
+                      <option value="none">1. Sin estudios</option>
+                      <option value="primary">2. Primaria</option>
+                      <option value="secondary">3. Bachillerato</option>
+                      <option value="technical">5. Técnico/Tenólogo</option>
+                      <option value="undergraduate">6. Pregrado</option>
+                      <option value="postgraduate">6. Postgrado</option>
+                    </select>
+                                 
+                    <p><label for="ocupacion">11. ¿A qué se dedica? :</label></p>
+                      <select id="ocupacion" name="ocupacion">
+                          <option value="">-- Seleccione --</option>
+                          <option value="estudia">1. Estudia</option>
+                          <option value="trabajo_formal">2. Trabajo formal</option>
+                          <option value="trabajo_informal">3. Trabajo informal</option>
+                          <option value="amo_casa">3. Amo de Casa</option>
+                          <option value="pensionado">5. Pensionado</option>
+                          <option value="desempleado">6. Desempleado</option>
+                          <option value="inactivoxenf">6. Inactivo por enfermedad</option>
+                      </select>
+          
+                    <p><label for="lugar-trabajo1">12. ¿Donde y trabaja? :</label></p>
+                      <input type="text" name="parent-name" required> 
+    
+                    <p> 13. <label for="estudia">¿Está estudiando? </label></p>
+                      <label><input type="radio" name="ethnic" value="yes" required> Sí</label>
+                      <label><input type="radio" name="ethnic" value="no" required> No</label>
+                    
+                    <p>    <label for="ingreso-semana">14. Ingresos a la Semana </label>:</p>
+                      <input type="number" name="ingreso" required>
+          
+              </fieldset>
+
+            </section> 
+    </div>
+</form>
+<<td><div class="buttonsig">
+  <button class="save" id="guardarEncuesta">Guardar encuesta</button>
+</div>
+</td>
+<td><div class="buttonsig">
+  <button Class="save" type="submit">Siguiente</button>
+</div>
+
+<script src="JS/main.js"></script>
+</body>
+</html>

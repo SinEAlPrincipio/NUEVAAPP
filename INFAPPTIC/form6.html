@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+  <html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Encuesta</title>
+ <link rel="stylesheet" href="CSS\main.css">
+ <script src=     
+    ></script>
+</head>
+<body>
+  <header class="header">
+    
+    <nav class="nav">
+      <div>
+        <a><img src="images\Logo\LOGO2.png"  class="logo"  height="55"></a>
+       </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <a><img src="images\ico\menu2.png"  alt="menu" class="fas fa-bars" width="25" height="30"></a>
+      <!--<a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/men%C3%BA">Menú</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    </button>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Inicio</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Arichivo</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Papelera</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Enviado</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Cerrar Sesión</a>
+      </li>
+    </ul>
+    </nav>  
+  </header> 
+ <div class="container">
+  <h1>Formulario de consentimiento e información</h1>
+    <form  action="index.html" method="post" id="formulario"> 
+        <section>
+         <fieldset> 
+              </p>
+         <label for="familia">41. ¿Cuántas personas en total viven en la casa del niño(a), incluyendo todos los niños y adultos?</label>
+               <input type="number" name="familia" required>
+                </p>
+             <p>
+                <label for="gastos">42.Sobre todo, ¿quien responde actualmente por los gastos de la alimentación del niño(a)?: </label>
+                <select id="gastos" name="gastos">
+            <option value="">-- Seleccione --</option>
+            <option value="madre">1. Madre</option>
+            <option value="madrastra">2. Madrastra</option>
+            <option value="padre">3. Padre</option>
+            <option value="padrastro">4. Padrastro</option>
+            <option value="tio">5. Tío(a)</option>
+            <option value="abuelo">6. Abuelo(a)</option>
+            <option value="hermano">7. Hermano(a)</option>
+            <option value="otrog">8. Otro(a)</option>
+                </select> 
+             </p>
+            <p>
+                <label for="alimento">43. Sobre todo, ¿quien se encarga de prepararle y darle la comida al niño(a) en su casa?: </label>
+          <select id="alimento" name="alimento">
+            <option value="">-- Seleccione --</option>
+            <option value="madre">1. Madre</option>
+            <option value="madrastra">2. Madrastra</option>
+            <option value="padre">3. Padre</option>
+            <option value="padrastro">4. Padrastro</option>
+            <option value="tio">5. Tío(a)</option>
+            <option value="abuelo">6. Abuelo(a)</option>
+            <option value="hermano">7. Hermano(a)</option>
+            <option value="otroa">8. Otro(a)</option>
+                 </select> 
+            </p>
+            </p>
+                 <label for="comida">44. ¿Generalmente usted cuántas comidas al día le prepara al niño ?</label>
+             <input type="number" name="comida" required>
+            </p>
+            </p>
+                <label for="comida-recibe">43. ¿Generalmente usted cuántas comidas al día le prepara al niño ?</label>
+           <input type="number" name="comida-recibe" required>
+                </p>
+        </fieldset>
+      </section> 
+        
+    </form>
+</div>
+    <<td><div class="buttonsig">
+      <button class="save" id="guardarEncuesta">Guardar encuesta</button>
+    </div>
+  </td>
+    <td><div class="buttonsig">
+      <button Class="save" type="submit">Siguiente</button>
+    </div>
+ <script src="JS/main.js"></script>
+</body>
+</html>

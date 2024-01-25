@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Encuesta</title>
+ <link rel="stylesheet" href="CSS\main.css">
+ <script src=     
+    ></script>
+</head>
+<body>
+  <header class="header">
+    
+    <nav class="nav">
+      <div>
+        <a><img src="images\Logo\LOGO2.png"  class="logo"  height="55"></a>
+       </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <a><img src="images\ico\menu2.png"  alt="menu" class="fas fa-bars" width="25" height="30"></a>
+      <!--<a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/men%C3%BA">Menú</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    </button>
+    <ul class="nav-menu">
+      
+        <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Inicio</a>
+      </li>
+          <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Arichivo</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Papelera</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Enviado</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">Cerrar Sesión</a>
+      </li>
+    </ul>
+    </nav>  
+    <div class="menu">
+      <div class="item" id="agregarCampo">
+          <img src="images/ico/plus.png" alt="Add">
+      </div>
+      <div class="item" id="archive">
+          <img src="images/ico/arch.png" alt="Archive">
+      </div>
+      <div class="item" id="save">
+          <img src="images/ico/pdf.png" alt="Save">
+      </div>
+      <div class="item" id="settings">
+          <img src="images/ico/ajuste.png" alt="Settings">
+     </div>
+   </div>
+  </header> 
+  <div class="container">
+    <span class="login100-container-title"><h1>Formulario de consentimiento e información</h1>
+    </span>
+      <form  action="index.html" method="post" id="formulario">
+        <section>
+            <fieldset>
+                <div class="wrap-input100 validate-input">
+                    <p><label for="nombre">2. Nombre completo de la persona encuestada:</label></p>
+                    <input class="imput100" type="text" name="name" required>
+                    <span class="focus-input100"></span>
+    
+                    <p><label for="edad">3. Edad</label>:</p>
+                    <input type="number" name="age" required>
+    
+                    <p><label for="cedula">3.1 Cédula</label>:</p>
+                    <input type="text" id="cedula" name="cedula" required>
+                    
+                    <p><label for="tipoid">3.2. Tipo de Identificación:</label></p>
+                    <label><input type="radio" name="id-type" value="cedula" required> Cédula</label>
+                    <label><input type="radio" name="id-type" value="ti" required> TI</label>
+                    <label><input type="radio" name="id-type"  required> Otro</label>
+                  
+                    <p><label for="numerocel">4. Número de Célular:</label></p>
+                    <input type="tel" name="phone" required>
+                    
+                    <p><label for="genero">5. Género:</label></p>
+                    <label><input type="radio" name="gender" value="male" required> Masculino</label>
+                    <label><input type="radio" name="gender" value="female" required> Femenino</label>
+                    <label><input type="radio" name="gender" value="other" required> Otras formas</label>
+          </fieldset>
+
+        </section>
+        </form>
+  </div>
+  <td><div class="buttonsig">
+    <button class="save" id="guardarEncuesta">Guardar encuesta</button>
+  </div>
+</td>
+  <td><div class="buttonsig">
+    <button Class="save" type="submit">Siguiente</button>
+  </div>
+</td>
+    
+
+<script src="JS/main.js"></script>
+</body>
+</html>
