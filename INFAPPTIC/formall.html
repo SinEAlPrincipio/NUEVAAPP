@@ -86,14 +86,15 @@
                   
               </select></p>
             <p><label for="que-nacionalidad">20. ¿Tiene otra nacionalidad?</label>
-            <select id="que-nacionalidad" name="nacionalidad">
-              <input type="text" id="cual" name="cual" required><br></p>
+                <input type="text" id="cual" name="cual" required><br></p>
 <p>
                   <label for="pregunta21">21. ¿Usted cuida a un niño(a) menor de 6 años?</label>
-                  <label for="si">Si</label>
-                  <input type="radio" id="si" name="pregunta22" value="si" required>
-                  <label for="no">No</label>
-                  <input type="radio" id="no" name="pregunta22" value="no" required>
+                  <select id="pregunta21" name="pregunta21">
+                  <option value="">-- Seleccione --</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                  
+              </select>
               </p>
               <p>
                   <label for="nombre">22. Nombre del niño(a) que participaría en este proyecto:</label>
@@ -116,33 +117,37 @@
               </p>
               <p>
                   <label for="programa">26. Programa:</label>
-                  <input type="radio" id="fami" name="programa" value="fami" required>
-                  <label for="fami">1FAMI</label>
-                  <input type="radio" id="otro" name="programa" value="otro" required>
-                  <label for="otro">Otro</label>
-                  <input type="radio" id="solo" name="programa" value="solo" required>
-                  <label for="solo">Ninguno, solo en casa</label>
+
+              <select id="pregunta21" name="pregunta21">
+                  <option value="">-- Seleccione --</option>
+                  <option value="1">FAMI</option>
+                  <option value="2">Otro</option>
+                  <option value="2">Ninguno, Solo en casa</option>
+                  
+              </select>
+                  
                   
               </p>
               <p>
                   <label for="condicion">27. ¿El niño(a) presenta alguna condición especial física o mental?</label>
-                  <label for="si">Si</label>
-                  <input type="radio" id="si" name="pregunta28" value="si" required>
-                  <label for="no">No</label>
-                  <input type="radio" id="no" name="pregunta28" value="no" required>
-              </p>
+                  <select id="condicion" name="condicion">
+                  <option value="">-- Seleccione --</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                  
+              </select>
               
                <label for="parentesco">28. ¿Cuál es su parentesco con el niño(a)?</label>
                 <select id="parentesco" name="parentesco">
                     <option value="">-- Seleccione --</option>
-                    <option value="madre">1. Madre</option>
-                    <option value="madrastra">2. Madrastra</option>
-                    <option value="padre">3. Padre</option>
-                    <option value="padrastro">4. Padrastro</option>
-                    <option value="tio">5. Tío(a)</option>
-                    <option value="abuelo">6. Abuelo(a)</option>
-                    <option value="hermano">7. Hermano(a)</option>
-                    <option value="otrop">8. Otro(a)</option>
+                    <option value="1"> Madre</option>
+                    <option value="2">2. Madrastra</option>
+                    <option value="3">3. Padre</option>
+                    <option value="4">4. Padrastro</option>
+                    <option value="5">5. Tío(a)</option>
+                    <option value="6">6. Abuelo(a)</option>
+                    <option value="7">7. Hermano(a)</option>
+                    <option value="8">8. Otro(a)</option>
                 </select>
              </p>
              <label for="primerhijo">29. ¿A qué edad tuvo la Madre su primer hijo?</label>
@@ -167,22 +172,22 @@
         <label for="nivel-educativo">35. Nivel educativo:</label>
         <select id="nivel-educativo" name="nivel-educativo">
           <option value="">Seleccione una opción</option>
-          <option value="sin-estudios">Osin estudios</option>
-          <option value="primaria">1. Primaria</option>
-          <option value="bachillerato">2. Bachillerato</option>
-          <option value="tecnico">3. Técnico</option>
+          <option value="1">1. sin estudios</option>
+          <option value="1">2. Primaria</option>
+          <option value="3">3. Bachillerato</option>
+          <option value="4">3. Técnico</option>
         </select>
       
         <label for="ocupacionp">36. A qué se dedica:</label>
         <select id="ocupacionp" name="ocupacionp">
           <option value="">Seleccione una opción</option>
-          <option value="estudia">1. Estudia</option>
-          <option value="trabajo-formal">2. Trabajo formal</option>
-          <option value="trabajo-informal">3. Trabajo informal</option>
-          <option value="amo-casa">5. Amo(a) de casa</option>
-          <option value="pensionado">6. Pensionado</option>
-          <option value="desempleado">7. Desempleado</option>
-          <option value="inactivo-enfermedad">8. Inactivo por enfermedad</option>
+          <option value="1">1. Estudia</option>
+          <option value="2">2. Trabajo formal</option>
+          <option value="3">3. Trabajo informal</option>
+          <option value="4">4. Amo(a) de casa</option>
+          <option value="5">5. Pensionado</option>
+          <option value="6">6. Desempleado</option>
+          <option value="7">7. Inactivo por enfermedad</option>
           
         </select><br>
       
@@ -190,10 +195,12 @@
         <input type="text" id="lugar-trabajo" name="lugar-trabajo">
       
         <p><label for="estudia">38. Estudia:</label>
-           <label for="si">Si</label>
-                <input type="radio" id="si" name="estudia" value="si" required>
-                <label for="no">No</label>
-                <input type="radio" id="no" name="estudia" value="no" required>
+            <select id="estudia" name="estudia">
+                  <option value="">-- Seleccione --</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                  
+              </select>>
         </p>
               
         <label for="ingresos">39. Ingresos en la semana:</label>
@@ -202,10 +209,10 @@
         <label for="estado-civil">40. Con el padredel niño está en:</label>
         <select id="estado-civil" name="estado-civil">
           <option value="">Seleccione una opción</option>
-          <option value="union-libre">1. Unión libre</option>
-          <option value="casado">2. Casada(o)</option>
-          <option value="separado">3. Separada(o)</option>
-          <option value="viudo">4. Viuda(o)</option>
+          <option value="1">1. Unión libre</option>
+          <option value="2">2. Casada(o)</option>
+          <option value="3">3. Separada(o)</option>
+          <option value="4">4. Viuda(o)</option>
         </select>
 </p>
          <label for="familia">41. ¿Cuántas personas en total viven en la casa del niño(a), incluyendo todos los niños y adultos?</label>
@@ -215,28 +222,28 @@
                 <label for="gastos">42.Sobre todo, ¿quien responde actualmente por los gastos de la alimentación del niño(a)?: </label>
                 <select id="gastos" name="gastos">
             <option value="">-- Seleccione --</option>
-            <option value="madre">1. Madre</option>
-            <option value="madrastra">2. Madrastra</option>
-            <option value="padre">3. Padre</option>
-            <option value="padrastro">4. Padrastro</option>
-            <option value="tio">5. Tío(a)</option>
-            <option value="abuelo">6. Abuelo(a)</option>
-            <option value="hermano">7. Hermano(a)</option>
-            <option value="otrog">8. Otro(a)</option>
+            <option value="1">1. Madre</option>
+            <option value="2">2. Madrastra</option>
+            <option value="3">3. Padre</option>
+            <option value="4">4. Padrastro</option>
+            <option value="5">5. Tío(a)</option>
+            <option value="6">6. Abuelo(a)</option>
+            <option value="7">7. Hermano(a)</option>
+            <option value="8">8. Otro(a)</option>
                 </select> 
              </p>
             <p>
                 <label for="alimento">43. Sobre todo, ¿quien se encarga de prepararle y darle la comida al niño(a) en su casa?: </label>
           <select id="alimento" name="alimento">
             <option value="">-- Seleccione --</option>
-            <option value="madre">1. Madre</option>
-            <option value="madrastra">2. Madrastra</option>
-            <option value="padre">3. Padre</option>
-            <option value="padrastro">4. Padrastro</option>
-            <option value="tio">5. Tío(a)</option>
-            <option value="abuelo">6. Abuelo(a)</option>
-            <option value="hermano">7. Hermano(a)</option>
-            <option value="otroa">8. Otro(a)</option>
+            <option value="1">1. Madre</option>
+            <option value="2">2. Madrastra</option>
+            <option value="3">3. Padre</option>
+            <option value="4">4. Padrastro</option>
+            <option value="5">5. Tío(a)</option>
+            <option value="6">6. Abuelo(a)</option>
+            <option value="7">7. Hermano(a)</option>
+            <option value="8">8. Otro(a)</option>
                  </select> 
             </p>
             </p>
