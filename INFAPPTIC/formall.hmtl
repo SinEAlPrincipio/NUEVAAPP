@@ -6,48 +6,59 @@
                     <input type="tel" name="parent-phone" required>
     
                     <p><label for="grupo-etnico">8. ¿Es usted de un grupo étnico?</label></p>
-                    <label><input type="radio" name="etnia" value="yes" required> Sí</label>
-                    <label><input type="radio" name="etnia" value="no" required> No</label>
+                    <select id="grupo-etnico" name="grupoetnico">
+                      <option value="">-- Seleccione --</option>
+                      <option value="si">Sí</option>
+                      <option value="no">No</option>
+              
+                   </select></p>
     
                     <p><label for="grupo-etnico2">9. ¿Cuál?</label></p>
-                    <label><input type="radio" name="ethnic-group" value="afrocolombiano" required> Afrocolombiano</label>
-                    <label><input type="radio" name="ethnic-group" value="indigena" required> Indígena</label>
-                    <label><input type="radio" name="ethnic-group" value="rrom" required> Rrom o Gitano</label>
-    
+                   <select id="Grupo-Etnico" name="Grupo-Etnico">
+                      <option value="0">-- Seleccione --</option>
+                      <option value="1">Afrocolombiano</option>
+                      <option value="2">Indigena</option>
+                      <option value="3">Rrom ó Gitano</option>
+                    
                     <p><label for="Nivel">10. Nivel educativo:</label></p>
                     <select id="Nivel educativo" name="Nivel education">
-                      <option value="">-- Seleccione --</option>
-                      <option value="none">1. Sin estudios</option>
-                      <option value="primary">2. Primaria</option>
-                      <option value="secondary">3. Bachillerato</option>
-                      <option value="technical">5. Técnico/Tenólogo</option>
-                      <option value="undergraduate">6. Pregrado</option>
-                      <option value="postgraduate">6. Postgrado</option>
+                      <option value="0">-- Seleccione --</option>
+                      <option value="1">1. Sin estudios</option>
+                      <option value="2">2. Primaria</option>
+                      <option value="3">3. Bachillerato</option>
+                      <option value="4">4. Técnico/Tenólogo</option>
+                      <option value="5">5. Pregrado</option>
+                      <option value="6">6. Postgrado</option>
                     </select>
                                  
                     <p><label for="ocupacion">11. ¿A qué se dedica? :</label></p>
                       <select id="ocupacion" name="ocupacion">
-                          <option value="">-- Seleccione --</option>
-                          <option value="estudia">1. Estudia</option>
-                          <option value="trabajo_formal">2. Trabajo formal</option>
-                          <option value="trabajo_informal">3. Trabajo informal</option>
-                          <option value="amo_casa">3. Amo de Casa</option>
-                          <option value="pensionado">5. Pensionado</option>
-                          <option value="desempleado">6. Desempleado</option>
-                          <option value="inactivoxenf">6. Inactivo por enfermedad</option>
+                          <option value="0">-- Seleccione --</option>
+                          <option value="1">1. Estudia</option>
+                          <option value="2">2. Trabajo formal</option>
+                          <option value="3">3. Trabajo informal</option>
+                          <option value="4">3. Amo de Casa</option>
+                          <option value="5">5. Pensionado</option>
+                          <option value="6">6. Desempleado</option>
+                          <option value="7">7. Inactivo por enfermedad</option>
                       </select>
           
                     <p><label for="lugar-trabajo1">12. ¿Donde y trabaja? :</label></p>
                       <input type="text" name="parent-name" required> 
     
                     <p> 13. <label for="estudia">¿Está estudiando? </label></p>
-                      <label><input type="radio" name="ethnic" value="yes" required> Sí</label>
-                      <label><input type="radio" name="ethnic" value="no" required> No</label>
+                      <select id="estudia" name="estudia">
+                      <option value="">-- Seleccione --</option>
+                      <option value="si">Sí</option>
+                      <option value="no">No</option>
+              
+                   </select></p>
                     
-                    <p>    <label for="ingreso-semana">14. Ingresos a la Semana </label>:</p>
-                      <input type="number" name="ingreso" required>.
-<label for="direccion">15. Dirección de su vivienda:</label>
-              <input type="text" id="direccion" name="direccion">
+         <p>  <label for="ingreso-semana">14. Ingresos a la Semana </label>:</p>
+                   <input type="number" name="ingreso" required>.
+
+                <p> <label for="direccion">15. Dirección de su vivienda:</label></p>
+                  <input type="text" id="direccion" name="direccion">
             
             <p<label for="barrio">16. Barrio:</label>
               <input type="text" id="barrio" name="barrio">
